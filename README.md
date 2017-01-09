@@ -14,6 +14,10 @@ Then, to launch into directions in that app:
                 forDirectionsTo:[CMMapPoint mapPointWithName:@"Big Ben"
                                                   coordinate:bigBen]];
 
+Enable debug logging to log the launch URI/parameters:
+
+    [CMMapLauncher enableDebugLogging];
+
 CMMapLauncher currently knows how to show directions in the following mapping apps:
 
 * Apple Maps &mdash; `CMMapAppAppleMaps`
@@ -23,6 +27,10 @@ CMMapLauncher currently knows how to show directions in the following mapping ap
 * The Transit App &mdash; `CMMapAppTheTransitApp`
 * Waze &mdash; `CMMapAppWaze`
 * Yandex Navigator &mdash; `CMMapAppYandex`
+* Uber &mdash; `CMMapAppUber`
+* TomTom &mdash; `CMMapAppTomTom`
+* Sygic &mdash; `CMMapAppSygic`
+* HERE Maps &mdash; `CMMapAppHereMaps`
 
 If you know of other direction-providing apps that expose a URL scheme for launching from other apps, this project wants to incorporate them!  Pull requests and issues providing URL schemes are encouraged.
 
